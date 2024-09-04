@@ -10,7 +10,6 @@ body {
 section.container {
   background-color: #fff;
   width: 100%;
-  max-width: 770px;
   box-sizing: border-box;
   margin: 0 auto;
   display: flex;
@@ -18,10 +17,11 @@ section.container {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  padding: 50px 120px 50px 120px;
+  padding: 20px;
 }
 
 img.site-logo {
+  width: 100%;
   max-width: 280px;
 }
 
@@ -32,6 +32,7 @@ h1 {
   letter-spacing: 3px;
   font-size: 15px;
   color: #584d4d;
+  text-align: center;
 }
 
 p {
@@ -47,5 +48,13 @@ a {
 }
 
 img.divider {
+  width: 100%;
   margin-top: 20px;
+}
+
+@media only screen and (min-width: 1024px) {
+  section.container {
+    max-width: 770px;
+    padding: 50px 120px 50px 120px;
+  }
 }
